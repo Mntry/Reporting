@@ -24,12 +24,14 @@
 ```
 <br />
 
-## Business Liability Current <sup>(Report for business owned accounts.)</sup>
+## Business Liability Current <sup>*</sup>
 
 `GET` /storedvalue/business/liabilityCurrent
 
 ###Request Fields (**bold** fields required)
 N/A
+
+<sup>*</sup> Reports on business owned accounts.<br />
 
 ###Response JSON
 ```
@@ -37,8 +39,7 @@ N/A
 ```
 <br />
 
-## Business Liability Effective
-<sup>Report for business owned accounts.</sup>
+## Business Liability Effective <sup>*</sup>
 
 `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
@@ -47,6 +48,7 @@ N/A
 |--------------------------------|---------|--------------------------|----------|
 | **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
 
+<sup>*</sup> Reports on business owned accounts.<br />
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
 ###Response JSON

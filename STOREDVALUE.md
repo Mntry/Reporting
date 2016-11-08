@@ -20,7 +20,13 @@
 
 ###Response JSON
 ```
-[{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
+[  
+   {  
+      "GroupId":1,
+      "Group":"Bark & Meow",
+      "Amount":"-11.23"
+   }
+]
 ```
 <br />
 
@@ -30,18 +36,24 @@
 
 <sup>*</sup> Reports on business owned accounts.<br />
 
-###Request Fields (**bold** fields required)
-N/A
-
 ###Response JSON
 ```
-[{"Account":"8383830000000034","Balance":"225.00"},{"Account":"8383830000000042","Balance":"113.00"}]
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"225.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"113.00"
+   }
+]
 ```
 <br />
 
 ## Business Liability Effective <sup>*</sup>
 
-`GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
+`GET` /storedvalue/business/liabilityeffective?EffectiveDate=**{EffectiveDate}**
 
 <sup>*</sup> Reports on business owned accounts.<br />
 
@@ -54,6 +66,15 @@ N/A
 
 ###Response JSON
 ```
-[{"Account":"8383830000000034","Balance":"25.00"},{"Account":"8383830000000042","Balance":"113.00"}]
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"25.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"113.00"
+   }
+]
 ```
 <br />

@@ -1,38 +1,22 @@
 
-# Monetary Pay API
+# Monetary Reporting API
 
 ### Stored Value Transaction Requests
-* [Load](#load)
-* [Void Load](#void-load)
-* [Sale](#sale)
-* [Void Sale](#void-sale)
-* [Balance](#balance)
-* [Create](#create)
-* [Set](#set)
+* [Business Reconcile](#business-reconcile)
+* [Business Liability Current](#business-liability-current)
+* [Business Liability Effective](#business-liability-effective)
 
-### Stored Value Transaction Responses
-* [Response Fields](#response-fields)
+## Business Reconcile
 
-## Load
-
-`POST` /storedvalue/load
+`GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
 
 ###Request Fields (**bold** fields required)
-| Field                         | Type    | Max Length  | Description            | Location |
-|-------------------------------|---------|-----|--------------------------------|------|
-| **Account** <sup>1</sup>      | Numeric | 19  | Account Number                 | Body |
-| **CVV** <sup>1</sup>              | String  | 3   | Account CVV                    | Body |
-| **Track2** <sup>2</sup>       | String  | 50  | Track2 Data (stripe)           | Body |
-| **Identifier** <sup>3</sup>   | String  | 30  | Account Alternate Identifier   | Body |
-| **Amount**                    | Numeric | 8   | Transaction Amount             | Body |
-| OverrideCVV                   | Boolean |     | Override Account CVV           | Body |
-| InvoiceNo                     | String  | 10  | Unique Transaction Identifier  | Body |
-| OverrideDuplicate             | Boolean |     | Override Duplicate Transaction | Body |
-| Promo                         | Boolean |     | Promotional Load               | Body |
+| Field                         | Type    | Description              | Location |
+|-------------------------------|---------|--------------------------|----------|
+| **StartDate** <sup>1</sup>    | Date    | Start date               | URL      |
+| **EndDate** <sup>1</sup>      | Date    | End date                 | URL      |
 
-<sup>1</sup> Include these fields for manually entered account information.<br />
-<sup>2</sup> Include this field for swiped account information.<br />
-<sup>3</sup> Include this field for alternate identifier account information.
+<sup>1</sup> Date format is yyyy-MM-dd.<br />
 
 <br />
 

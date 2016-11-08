@@ -6,8 +6,6 @@ Authorization is easy, just insert your secret key in the `Authorization` header
 `Authorization: secretKEYGOESHERE`
   
 ###Content Types
-Communicate with us in your favorite content type!
-
 We support the following for `Content-Type` and `Accepts` values:
 
 * `application/json`
@@ -15,9 +13,9 @@ We support the following for `Content-Type` and `Accepts` values:
 ##Transactions
 
 ###[Stored Value Reports](STOREDVALUE.md)
-* [Business Reconcile](STOREDVALUE.md#load) `GET` /storedvalue/business/reconcile?startDate=**{startDate}**&endDate=**{endDate}**
-* [Business Liability Current](STOREDVALUE.md#void-load) `GET` /storedvalue/business/liabilityCurrent
-* [Business Liability Effective](STOREDVALUE.md#sale) `GET` /storedvalue/business/liabilityEffective?effectiveDate=**{effectiveDate}**
+* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?startDate=**{startDate}**&endDate=**{endDate}**
+* [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent
+* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?effectiveDate=**{effectiveDate}**
 
 ###Success Responses
 * ```200 OK```

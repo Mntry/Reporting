@@ -11,7 +11,7 @@ We support the following for `Content-Type` and `Accepts` values:
 * `application/json`
 
 ###[Stored Value Reports](STOREDVALUE.md)
-* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?StartDate=**{startDate}**&EndDate=**{endDate}**
+* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
 * [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent
 * [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 

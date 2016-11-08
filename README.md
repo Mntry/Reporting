@@ -10,8 +10,6 @@ We support the following for `Content-Type` and `Accepts` values:
 
 * `application/json`
 
-##Transactions
-
 ###[Stored Value Reports](STOREDVALUE.md)
 * [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?startDate=**{startDate}**&endDate=**{endDate}**
 * [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent

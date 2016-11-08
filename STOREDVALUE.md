@@ -24,8 +24,7 @@
 ```
 <br />
 
-## Business Liability Current
-<sup>Report for business owned accounts.</sup>
+## Business Liability Current <sup>(Report for business owned accounts.)</sup>
 
 `GET` /storedvalue/business/liabilityCurrent
 

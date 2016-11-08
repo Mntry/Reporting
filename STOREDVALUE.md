@@ -25,6 +25,7 @@
 <br />
 
 ## Business Liability Current
+<sup>Report for business owned accounts.</sup>
 
 `GET` /storedvalue/business/liabilityCurrent
 
@@ -38,6 +39,7 @@ N/A
 <br />
 
 ## Business Liability Effective
+<sup>Report for business owned accounts.</sup>
 
 `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 

@@ -11,9 +11,9 @@ We support the following for `Content-Type` and `Accepts` values:
 * `application/json`
 
 ###[Stored Value Reports](STOREDVALUE.md)
-* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?startDate=**{startDate}**&endDate=**{endDate}**
+* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?StartDate=**{startDate}**&EndDate=**{endDate}**
 * [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent
-* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?effectiveDate=**{effectiveDate}**
+* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
 ###Success Responses
 * ```200 OK```
@@ -25,7 +25,7 @@ We support the following for `Content-Type` and `Accepts` values:
 ###Example Stored Value Business Reconcile Request
 
 ```
-GET https://reporting.monetary.co/v1/storedvalue/business/reconcile?startDate=2016-10-1&endDate=2016-10-31
+GET https://reporting.monetary.co/v1/storedvalue/business/reconcile?StartDate=2016-10-1&EndDate=2016-10-31
 
 Authorization: secretKEYGOESHERE
 Content-Type: application/json

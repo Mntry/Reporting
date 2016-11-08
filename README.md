@@ -36,5 +36,10 @@ Accept: application/json
 ```
 200 OK
 
-[{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
+   {  
+      "GroupId":1,
+      "Group":"Bark & Meow",
+      "Amount":"-11.23"
+   }
+]
 ```

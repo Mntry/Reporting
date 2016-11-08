@@ -33,7 +33,7 @@ N/A
 
 ###Response JSON
 ```
-[{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"}]
+[{"Account":"8383830000000034","Balance":"225.00"},{"Account":"8383830000000042","Balance":"113.00"}]
 ```
 <br />
 
@@ -44,12 +44,12 @@ N/A
 ###Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
-| **EffectiveDate** <sup>1</sup> | Date    | Effective date           | URL      |
+| **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
 ###Response JSON
 ```
-[{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"}]
+[{"Account":"8383830000000034","Balance":"25.00"},{"Account":"8383830000000042","Balance":"113.00"}]
 ```
 <br />

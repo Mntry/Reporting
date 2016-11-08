@@ -15,46 +15,30 @@ We support the following for `Content-Type` and `Accepts` values:
 ##Transactions
 
 ###[Stored Value Reports](STOREDVALUE.md)
-* [Business Reconcile](STOREDVALUE.md#load) `POST` /storedvalue/load
-* [Business Liability Current](STOREDVALUE.md#void-load) `POST` /storedvalue/load/**{RefNo}**/void
-* [Business Liability Effective](STOREDVALUE.md#sale) `POST` /storedvalue/sale
+* [Business Reconcile](STOREDVALUE.md#load) `GET` /storedvalue/business/reconcile?startDate=**{startDate}**&endDate=**{endDate}**
+* [Business Liability Current](STOREDVALUE.md#void-load) `GET` /storedvalue/business/liabilityCurrent
+* [Business Liability Effective](STOREDVALUE.md#sale) `GET` /storedvalue/business/liabilityEffective?effectiveDate=**{effectiveDate}**
 
 ###Success Responses
-* ```200 OK``` Approved Transaction
+* ```200 OK```
 
 ###Failure Responses
-* ```400 BAD REQUEST``` Invalid Transaction Request
-* ```401 UNAUTHORIZED``` Unauthorized Transaction
+* ```400 BAD REQUEST```
+* ```401 UNAUTHORIZED```
 
-###Example Credit Sale Request
+###Example Stored Value Business Reconcile Request
 
 ```
-POST https://pay.monetary.co/v1/credit/sale
+GET https://reporting.monetary.co/v1/storedvalue/business/reconcile?startDate=2016-10-1&endDate=2016-10-31
 
 Authorization: secretKEYGOESHERE
 Content-Type: application/json
 Accept: application/json
-
-{
-  "Amount": "1.00",
-  "Account": "4242424242424242",
-  "Expiration": "1220"
-}
 ```
 
-###Example Credit Sale Response
+###Example Stored Value Business Reconcile Response
 ```
 200 OK
 
-{
-  "Status": "Approved",
-  "Message": "APPROVAL",
-  "Account": "XXXXXXXXXXXX4242",
-  "Expiration": "XXXX",
-  "Brand": "VISA",
-  "RefNo": "123",
-  "Amount": "1.00",
-  "Authorized": "1.00",
-  "Token": "card_1ABCDEFG2"
-}
+[{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
 ```

@@ -24,38 +24,32 @@
 ```
 <br />
 
-## Business Reconcile
+## Business Liability Current
 
-`GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
+`GET` /storedvalue/business/liabilityCurrent
 
 ###Request Fields (**bold** fields required)
-| Field                         | Type    | Description              | Location |
-|-------------------------------|---------|--------------------------|----------|
-| **StartDate** <sup>1</sup>    | Date    | Start date               | URL      |
-| **EndDate** <sup>1</sup>      | Date    | End date                 | URL      |
-
-<sup>1</sup> Date format is yyyy-MM-dd.<br />
+N/A
 
 ###Response JSON
 ```
-[{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
+[{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"}]
 ```
 <br />
 
-## Business Reconcile
+## Business Liability Effective
 
-`GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
+`GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
 ###Request Fields (**bold** fields required)
-| Field                         | Type    | Description              | Location |
-|-------------------------------|---------|--------------------------|----------|
-| **StartDate** <sup>1</sup>    | Date    | Start date               | URL      |
-| **EndDate** <sup>1</sup>      | Date    | End date                 | URL      |
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **EffectiveDate** <sup>1</sup> | Date    | Effective date           | URL      |
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
 ###Response JSON
 ```
-[{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
+[{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"},{"Account":"","Balance":"-11.23"}]
 ```
 <br />

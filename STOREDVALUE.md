@@ -19,9 +19,9 @@
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
 ###Response JSON
-'''
+```
 [{"GroupId":1,"Group":"Bark & Meow","Amount":"-11.23"}]
-'''
+```
 <br />
 
 ## Void Load

@@ -25,8 +25,10 @@
 <br />
 
 ## Business Liability Current <sup>*</sup>
-<sup>*</sup> Reports on business owned accounts.<br />
+
 `GET` /storedvalue/business/liabilityCurrent
+
+<sup>*</sup> Reports on business owned accounts.<br />
 
 ###Request Fields (**bold** fields required)
 N/A
@@ -38,8 +40,10 @@ N/A
 <br />
 
 ## Business Liability Effective <sup>*</sup>
-<sup>*</sup> Reports on business owned accounts.<br />
+
 `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
+
+<sup>*</sup> Reports on business owned accounts.<br />
 
 ###Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |

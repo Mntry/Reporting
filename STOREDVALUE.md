@@ -10,7 +10,7 @@
 
 `GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
 
-###Request Fields (**bold** fields required)
+### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
 |-------------------------------|---------|--------------------------|----------|
 | **StartDate** <sup>1</sup>    | Date    | Start date               | URL      |
@@ -18,7 +18,7 @@
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
-###Response JSON
+### Response JSON
 ```
 [  
    {  
@@ -36,7 +36,7 @@
 
 <sup>*</sup> Reports on business owned accounts.<br />
 
-###Response JSON
+### Response JSON
 ```
 [  
    {  
@@ -57,14 +57,14 @@
 
 <sup>*</sup> Reports on business owned accounts.<br />
 
-###Request Fields (**bold** fields required)
+### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
 | **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />
 
-###Response JSON
+### Response JSON
 ```
 [  
    {  

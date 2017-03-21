@@ -1,28 +1,31 @@
 # Getting Started with Reporting API
-###Authorization
+### Authorization
 
 Authorization is easy, just insert your secret key in the `Authorization` header:
 
 `Authorization: secretKEYGOESHERE`
   
-###Content Types
+### Content Types
 We support the following for `Content-Type` and `Accepts` values:
 
 * `application/json`
 
-###[Stored Value Reports](STOREDVALUE.md)
+### [Stored Value Reports](STOREDVALUE.md)
+
 * [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
 * [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent
 * [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
-###Success Responses
+### Success Responses
+
 * ```200 OK```
 
-###Failure Responses
+### Failure Responses
+
 * ```400 BAD REQUEST```
 * ```401 UNAUTHORIZED```
 
-###Example Stored Value Business Reconcile Request
+### Example Stored Value Business Reconcile Request
 
 ```
 GET https://reporting.monetary.co/v1/storedvalue/business/reconcile?StartDate=2016-10-1&EndDate=2016-10-31
@@ -32,7 +35,7 @@ Content-Type: application/json
 Accept: application/json
 ```
 
-###Example Stored Value Business Reconcile Response
+### Example Stored Value Business Reconcile Response
 ```
 200 OK
 

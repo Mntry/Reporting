@@ -10,7 +10,7 @@
 
 ## Business Reconcile
 
-`GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
+`GET` /v1/storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -35,7 +35,7 @@
 ## Business Liability Current
 Reports on business owned accounts.<br />
 
-`GET` /storedvalue/business/liabilityCurrent
+`GET` /v1/storedvalue/business/liabilityCurrent
 
 ### Response JSON
 ```
@@ -55,7 +55,7 @@ Reports on business owned accounts.<br />
 ## Business Liability Effective
 Reports on business owned accounts.<br />
 
-`GET` /storedvalue/business/liabilityeffective?EffectiveDate=**{EffectiveDate}**
+`GET` /v1/storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -82,7 +82,7 @@ Reports on business owned accounts.<br />
 ## Groups Liability Current
 Reports on group owned accounts.<br />
 
-`GET` /storedvalue/groups/**{Id}**/liabilityCurrent
+`GET` /v1/storedvalue/groups/**{Id}**/liabilityCurrent
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -108,7 +108,7 @@ Reports on group owned accounts.<br />
 ## Groups Liability Effective
 Reports on group owned accounts.<br />
 
-`GET` /storedvalue/groups/**{Id}**/liabilityeffective?EffectiveDate=**{EffectiveDate}**
+`GET` /v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |

@@ -10,6 +10,10 @@ We support the following for `Content-Type` and `Accepts` values:
 
 * `application/json`
 
+### [Groups Reports](GROUPS.md)
+
+* [Groups](GROUPS.md#groups) `GET` /v1/groups
+
 ### [Stored Value Reports](STOREDVALUE.md)
 
 * [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /v1/storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**

@@ -5,6 +5,8 @@
 * [Business Reconcile](#business-reconcile)
 * [Business Liability Current](#business-liability-current)
 * [Business Liability Effective](#business-liability-effective)
+* [Groups Liability Current](#groups-liability-current)
+* [Groups Liability Effective](#groups-liability-effective)
 
 ## Business Reconcile
 
@@ -60,6 +62,62 @@
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
+| **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
+
+<sup>1</sup> Date format is yyyy-MM-dd.<br />
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"25.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"113.00"
+   }
+]
+```
+<br />
+
+## Groups Liability Current <sup>*</sup>
+
+`GET` /storedvalue/groups/**{Id}**/liabilityCurrent
+
+<sup>*</sup> Reports on group owned accounts.<br />
+
+### Request Fields (**bold** fields required)
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **Id**                         | integer | Group Id.                | URL      |
+
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"225.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"113.00"
+   }
+]
+```
+<br />
+
+## Groups Liability Effective <sup>*</sup>
+
+`GET` /storedvalue/groups/**{Id}**/liabilityeffective?EffectiveDate=**{EffectiveDate}**
+
+<sup>*</sup> Reports on group owned accounts.<br />
+
+### Request Fields (**bold** fields required)
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **Id**                         | integer | Group Id.                | URL      |
 | **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />

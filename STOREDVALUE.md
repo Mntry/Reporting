@@ -87,7 +87,7 @@ Reports on group owned accounts.<br />
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
-| **Id**                         | integer | Group Id.                | URL      |
+| **Id**                         | Integer | Group Id.                | URL      |
 
 
 ### Response JSON
@@ -113,7 +113,7 @@ Reports on group owned accounts.<br />
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
-| **Id**                         | integer | Group Id.                | URL      |
+| **Id**                         | Integer | Group Id.                | URL      |
 | **EffectiveDate** <sup>1</sup> | Date    | Liability as of beginning of this day. | URL      |
 
 <sup>1</sup> Date format is yyyy-MM-dd.<br />

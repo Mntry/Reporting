@@ -32,11 +32,10 @@
 ```
 <br />
 
-## Business Liability Current <sup>*</sup>
+## Business Liability Current
+Reports on business owned accounts.<br />
 
 `GET` /storedvalue/business/liabilityCurrent
-
-<sup>*</sup> Reports on business owned accounts.<br />
 
 ### Response JSON
 ```
@@ -53,11 +52,10 @@
 ```
 <br />
 
-## Business Liability Effective <sup>*</sup>
+## Business Liability Effective
+Reports on business owned accounts.<br />
 
 `GET` /storedvalue/business/liabilityeffective?EffectiveDate=**{EffectiveDate}**
-
-<sup>*</sup> Reports on business owned accounts.<br />
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -81,11 +79,10 @@
 ```
 <br />
 
-## Groups Liability Current <sup>*</sup>
+## Groups Liability Current
+Reports on group owned accounts.<br />
 
 `GET` /storedvalue/groups/**{Id}**/liabilityCurrent
-
-<sup>*</sup> Reports on group owned accounts.<br />
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -108,11 +105,10 @@
 ```
 <br />
 
-## Groups Liability Effective <sup>*</sup>
+## Groups Liability Effective
+Reports on group owned accounts.<br />
 
 `GET` /storedvalue/groups/**{Id}**/liabilityeffective?EffectiveDate=**{EffectiveDate}**
-
-<sup>*</sup> Reports on group owned accounts.<br />
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |

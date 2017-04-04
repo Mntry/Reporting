@@ -12,11 +12,11 @@ We support the following for `Content-Type` and `Accepts` values:
 
 ### [Stored Value Reports](STOREDVALUE.md)
 
-* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
-* [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /storedvalue/business/liabilityCurrent
-* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
-* [Groups Liability Current](STOREDVALUE.md#groups-liability-current) `GET` /storedvalue/groups/**{id}**/liabilityCurrent
-* [Groups Liability Effective](STOREDVALUE.md#groups-liability-effective) `GET` /storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**
+* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` /v1/storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
+* [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` /v1/storedvalue/business/liabilityCurrent
+* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` /v1/storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
+* [Groups Liability Current](STOREDVALUE.md#groups-liability-current) `GET` /v1/storedvalue/groups/**{id}**/liabilityCurrent
+* [Groups Liability Effective](STOREDVALUE.md#groups-liability-effective) `GET` /v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**
 
 ### Success Responses
 

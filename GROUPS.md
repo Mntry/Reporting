@@ -5,7 +5,7 @@
 
 ## Groups
 
-`GET` /v1/groups
+`GET` [/v1/groups](https://reporting-cert.monetary.co/swagger/ui/index#!/Groups/Groups_Groups)
 
 ### Response JSON
 ```

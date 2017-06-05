@@ -2,11 +2,39 @@
 # Monetary Reporting API
 
 ### Stored Value Reporting Requests
+* [Account Transaction](#account-transaction)
 * [Business Reconcile](#business-reconcile)
 * [Business Liability Current](#business-liability-current)
 * [Business Liability Effective](#business-liability-effective)
 * [Groups Liability Current](#groups-liability-current)
 * [Groups Liability Effective](#groups-liability-effective)
+## Account Transaction
+retrieve all transactions for a single stored value account
+`GET` [/v1/storedvalue/**{Id}**/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_AccountTransactions)
+
+### Request Fields (**bolld** fields required)
+| Field                         | Type    | Description              | Location |
+|-------------------------------|---------|--------------------------|----------|
+| **Id**                        | number  | SV Account Number        | URL      |
+
+### Response JSON
+```
+[
+  {
+    "Reference": 102394,
+    "DateTimeLocal": "2017-06-05T14:59:40.3699059+00:00",
+    "Trancode": "Sale",
+    "Status": "Approved",
+    "Message": "no real message",
+    "Account": "8383830000000018",
+    "invoice": "T3HB1LLS",
+    "Amount": 123.45,
+    "IsBulk": true,
+    "IsPromo": false,
+    "VoidID": 5225
+  }
+]
+```
 
 ## Business Reconcile
 

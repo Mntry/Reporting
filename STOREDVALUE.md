@@ -10,7 +10,7 @@
 
 ## Business Reconcile
 
-`GET` /v1/storedvalue/business/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**
+`GET` [/v1/storedvalue/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessReconcile)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -35,7 +35,7 @@
 ## Business Liability Current
 Reports on business owned accounts.<br />
 
-`GET` /v1/storedvalue/business/liabilityCurrent
+`GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessLiabilityCurrent)
 
 ### Response JSON
 ```
@@ -55,7 +55,7 @@ Reports on business owned accounts.<br />
 ## Business Liability Effective
 Reports on business owned accounts.<br />
 
-`GET` /v1/storedvalue/business/liabilityEffective?EffectiveDate=**{EffectiveDate}**
+`GET`  [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessLiabilityEffective)
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -82,7 +82,7 @@ Reports on business owned accounts.<br />
 ## Groups Liability Current
 Reports on group owned accounts.<br />
 
-`GET` /v1/storedvalue/groups/**{Id}**/liabilityCurrent
+`GET` [/v1/storedvalue/groups/**{id}**/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_GroupsLiabilityCurrent)
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -108,8 +108,7 @@ Reports on group owned accounts.<br />
 ## Groups Liability Effective
 Reports on group owned accounts.<br />
 
-`GET` /v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**
-
+`GET` [/v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_GroupsLiabilityEffective)
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|

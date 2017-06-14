@@ -8,8 +8,9 @@
 * [Business Liability Effective](#business-liability-effective)
 * [Groups Liability Current](#groups-liability-current)
 * [Groups Liability Effective](#groups-liability-effective)
-## Account Transaction
-retrieve all transactions for a single stored value account
+
+## Account Transactions
+Retrieve all transactions for a single stored value account
 `GET` [/v1/storedvalue/**{Id}**/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_AccountTransactions)
 
 ### Request Fields (**bold** fields required)

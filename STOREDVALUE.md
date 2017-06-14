@@ -12,7 +12,7 @@
 retrieve all transactions for a single stored value account
 `GET` [/v1/storedvalue/**{Id}**/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_AccountTransactions)
 
-### Request Fields (**bolld** fields required)
+### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
 |-------------------------------|---------|--------------------------|----------|
 | **Id**                        | number  | SV Account Number        | URL      |

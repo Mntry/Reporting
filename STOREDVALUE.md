@@ -2,7 +2,7 @@
 # Monetary Reporting API
 
 ### Stored Value Reporting Requests
-* [Account Transaction](#account-transaction)
+* [Account Transactions](#account-transactions)
 * [Business Reconcile](#business-reconcile)
 * [Business Liability Current](#business-liability-current)
 * [Business Liability Effective](#business-liability-effective)

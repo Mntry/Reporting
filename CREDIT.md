@@ -1,11 +1,10 @@
 # Monetary Reporting API
 
 ### Credit Reporting Requests
-* [Credit](#credit)
+* [Credit Transactions](#credit-transactions)
 
-## Credit
-
-`GET` [/v1/Credit/Transactions/{StartDate}/{EndDate}](https://reporting-cert.monetary.co/swagger/ui/index#!/Credit/Credit_Transactions)
+## Credit Transactions
+Retrieve credit transactions for the authenticated mid. `GET` [/v1/Credit/Transactions/{StartDate}/{EndDate}](https://reporting-cert.monetary.co/swagger/ui/index#!/Credit/Credit_Transactions)
 
 ### Response JSON
 ```

@@ -10,6 +10,10 @@ We support the following for `Content-Type` and `Accepts` values:
 
 * `application/json`
 
+### [Credit Reports](CREDIT.md)
+
+* [Credit Transactions](CREDIT.md#credit) `GET` [v1/credit/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/Credit/Credit_Transactions)
+
 ### [Groups Reports](GROUPS.md)
 
 * [Groups](GROUPS.md#groups) `GET` [/v1/groups](https://reporting-cert.monetary.co/swagger/ui/index#!/Groups/Groups_Groups)

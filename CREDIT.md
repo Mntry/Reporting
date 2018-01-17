@@ -11,7 +11,7 @@ Retrieve credit transactions for the authenticated mid. `GET` [/v1/Credit/Transa
 [
   {
     "Reference": 8383830000000018,
-    "DateTimeLocal": "2017-06-15T17:01:48.4191546+00:00",
+    "DateTimeLocal": "2018-01-16T16:19:19.36",
     "Transcode": "VoidSale",
     "Status": "Success",
     "CardBrand": "VISA",
@@ -24,7 +24,7 @@ Retrieve credit transactions for the authenticated mid. `GET` [/v1/Credit/Transa
   },
   {
     "Reference": 8383830000000026,
-    "DateTimeLocal": "2017-06-15T17:00:48.4191546+00:00",
+    "DateTimeLocal": "2018-01-16T16:19:17.83",
     "Transcode": "Sale",
     "Status": "Approved",
     "CardBrand": "VISA",

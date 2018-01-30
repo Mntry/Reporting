@@ -16,15 +16,18 @@ We support the following for `Content-Type` and `Accepts` values:
 
 ### [Groups Reports](GROUPS.md)
 
-* [Groups](GROUPS.md#groups) `GET` [/v1/groups](https://reporting-cert.monetary.co/swagger/ui/index#!/Groups/Groups_Groups)
+* [Groups](GROUPS.md#groups) `GET` [/v1/groups](https://reporting-cert.monetary.co/swagger/ui/index#!/Groups/Available_Groups)
 
 ### [Stored Value Reports](STOREDVALUE.md)
-* [Account Transactions](STOREDVALUE.md#account-transaction) `GET` [/v1/storedvalue/account/{Id}/Transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_AccountTransactions)
-* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` [/v1/storedvalue/reconcile?StartDate=**\{StartDate\}**&EndDate=**\{EndDate\}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessReconcile)
-* [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessLiabilityCurrent)
-* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_BusinessLiabilityEffective)
-* [Groups Liability Current](STOREDVALUE.md#groups-liability-current) `GET` [/v1/storedvalue/groups/**{id}**/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_GroupsLiabilityCurrent)
-* [Groups Liability Effective](STOREDVALUE.md#groups-liability-effective) `GET` [/v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/StoredValue_GroupsLiabilityEffective)
+* [Account Transactions](STOREDVALUE.md#account-transaction) `GET` [/v1/storedvalue/account/{Id}/Transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Gift_Account_Transactions)
+* [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Current_Liability)
+* [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Effective_Liability)
+* [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` [/v1/storedvalue/reconcile?StartDate=**\{StartDate\}**&EndDate=**\{EndDate\}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Reconciliation)
+* [Business Transactions](STOREDVALUE.md#business-transactions) `GET` [/v1/storedvalue/transactions?StartDate=**\{StartDate\}**&EndDate=**\{EndDate\}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Transactions)
+* [Groups Liability Current](STOREDVALUE.md#groups-liability-current) `GET` [/v1/storedvalue/groups/**{id}**/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Current_Liability)
+* [Groups Liability Effective](STOREDVALUE.md#groups-liability-effective) `GET` [/v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Effective_Liability)
+* [Groups Reconcile](STOREDVALUE.md#groups-reconcile) `GET` [/v1/storedvalue/groups/**{Id}**/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Reconciliation)
+* [Groups Transactions](STOREDVALUE.md#groups-transactions) `GET` [/v1/storedvalue/groups/**{Id}**/transactions?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Transactions)
 
 ### Success Responses
 

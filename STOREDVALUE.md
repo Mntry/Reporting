@@ -25,19 +25,34 @@ All transactions for a single stored value account<br />
 ### Response JSON
 ```
 [
-  {
-    "Reference": 102394,
-    "DateTimeLocal": "2017-06-05T14:59:40.3699059+00:00",
-    "Trancode": "Sale",
-    "Status": "Approved",
-    "Message": "no real message",
-    "Account": "8383830000000018",
-    "invoice": "T3HB1LLS",
-    "Amount": 123.45,
-    "IsBulk": true,
-    "IsPromo": false,
-    "VoidID": 5225
-  }
+   {
+      "Reference": 102394,
+      "DatetimeLocal": "2018-01-31T12:10:49.84",
+      "Trancode": "Sale",
+      "Status": "Approved",
+      "Message": null,
+      "Invoice": "T3HB1LLS",
+      "Account": "8383830000000018",
+      "Amount": -5.95,
+      "IsBulk": false,
+      "IsPromo": false,
+      "VoidId": null,
+	  "Business": "Dgo - Main Location"
+   },
+   {
+      "Reference": null,
+      "DatetimeLocal": "2018-01-31T12:10:49.84",
+      "Trancode": "Set",
+      "Status": "Error",
+      "Message": "Invalid Account/CVV/Identifier",
+      "Invoice": null,
+      "Account": "8282820000001894",
+      "Amount": null,
+      "IsBulk": false,
+      "IsPromo": false,
+      "VoidId": null,
+	  "Business": "Den - Cherry Creek Location"
+   }
 ]
 ```
 
@@ -233,13 +248,13 @@ Net change in liability for the date range partitioned by business<br />
       "BusinessId": 555,
       "Business": "Dgo - Main Location",
       "Amount": 800,
-	  "IsHoldingBusiness": 1
+      "IsHoldingBusiness": 1
    },
    {
       "BusinessId": 123,
       "Business": "Den - Cherry Creek Location",
       "Amount": -5,
-	  "IsHoldingBusiness": 0
+      "IsHoldingBusiness": 0
    }
 ]
 ```
@@ -263,14 +278,34 @@ Transactions in the date range for group owned accounts<br />
 ```
 [
    {
-      "BusinessId": 555,
-      "Business": "Dgo - Main Location",
-      "Amount": 800
+      "Reference": 102394,
+      "DatetimeLocal": "2018-01-31T12:10:49.84",
+      "Trancode": "Sale",
+      "Status": "Approved",
+      "Message": null,
+      "Invoice": "T3HB1LLS",
+      "Account": "8383830000000018",
+      "Amount": -5.95,
+      "IsBulk": false,
+      "IsPromo": false,
+      "VoidId": null,
+	  "BusinessID": 555,
+	  "Business": "Dgo - Main Location"
    },
    {
-      "BusinessId": 123,
-      "Business": "Den - Cherry Creek Location",
-      "Amount": -5
+      "Reference": null,
+      "DatetimeLocal": "2018-01-31T12:10:49.84",
+      "Trancode": "Set",
+      "Status": "Error",
+      "Message": "Invalid Account/CVV/Identifier",
+      "Invoice": null,
+      "Account": "8282820000001894",
+      "Amount": null,
+      "IsBulk": false,
+      "IsPromo": false,
+      "VoidId": null,
+	  "BusinessID": 555,
+	  "Business": "Den - Cherry Creek Location"
    }
 ]
 ```

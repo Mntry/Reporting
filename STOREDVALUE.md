@@ -15,7 +15,7 @@
 ## Account Transactions
 All transactions for a single stored value account<br />
 
-`GET` [/v1/storedvalue/**{Id}**/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Gift_Account_Transactions)
+`GET` [/v1/storedvalue/**{Id}**/transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Stored_Value_Account_Transactions)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -44,7 +44,7 @@ All transactions for a single stored value account<br />
 ## Business Liability Current
 Current liability on business owned accounts<br />
 
-`GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Current_Liability)
+`GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Current_Liability)
 
 ### Response JSON
 ```
@@ -64,7 +64,7 @@ Current liability on business owned accounts<br />
 ## Business Liability Effective
 Liability as of effective date on business owned accounts<br />
 
-`GET`  [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Effective_Liability)
+`GET`  [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Effective_Liability)
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -91,7 +91,7 @@ Liability as of effective date on business owned accounts<br />
 ## Business Reconcile
 Net change in liability for the date range partitioned by group<br />
 
-`GET` [/v1/storedvalue/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Reconciliation)
+`GET` [/v1/storedvalue/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Reconciliation)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -116,7 +116,7 @@ Net change in liability for the date range partitioned by group<br />
 ## Business Transactions
 Transactions in the date range<br />
 
-`GET` [/v1/storedvalue/transactions?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Gift_Transactions)
+`GET` [/v1/storedvalue/transactions?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Transactions)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -162,7 +162,7 @@ Transactions in the date range<br />
 ## Groups Liability Current
 Current liability on group owned accounts<br />
 
-`GET` [/v1/storedvalue/groups/**{id}**/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Current_Liability)
+`GET` [/v1/storedvalue/groups/**{id}**/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Current_Liability)
 
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
@@ -188,7 +188,7 @@ Current liability on group owned accounts<br />
 ## Groups Liability Effective
 Liability as of effective date on group owned accounts<br />
 
-`GET` [/v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Effective_Liability)
+`GET` [/v1/storedvalue/groups/**{Id}**/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Effective_Liability)
 ### Request Fields (**bold** fields required)
 | Field                          | Type    | Description              | Location |
 |--------------------------------|---------|--------------------------|----------|
@@ -215,7 +215,7 @@ Liability as of effective date on group owned accounts<br />
 ## Groups Reconcile
 Net change in liability for the date range partitioned by business<br />
 
-`GET` [/v1/storedvalue/groups/**{Id}**/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Reconciliation)
+`GET` [/v1/storedvalue/groups/**{Id}**/reconcile?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Reconciliation)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |
@@ -248,7 +248,7 @@ Net change in liability for the date range partitioned by business<br />
 ## Groups Transactions
 Transactions in the date range for group owned accounts<br />
 
-`GET` [/v1/storedvalue/groups/**{Id}**/transactions?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Gift_Transactions)
+`GET` [/v1/storedvalue/groups/**{Id}**/transactions?StartDate=**{StartDate}**&EndDate=**{EndDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Transactions)
 
 ### Request Fields (**bold** fields required)
 | Field                         | Type    | Description              | Location |

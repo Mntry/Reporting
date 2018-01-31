@@ -19,7 +19,7 @@ We support the following for `Content-Type` and `Accepts` values:
 * [Groups](GROUPS.md#groups) `GET` [/v1/groups](https://reporting-cert.monetary.co/swagger/ui/index#!/Groups/Available_Groups)
 
 ### [Stored Value Reports](STOREDVALUE.md)
-* [Account Transactions](STOREDVALUE.md#account-transaction) `GET` [/v1/storedvalue/account/{Id}/Transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Stored_Value_Account_Transactions)
+* [Account Transactions](STOREDVALUE.md#account-transactions) `GET` [/v1/storedvalue/account/{Id}/Transactions](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Stored_Value_Account_Transactions)
 * [Business Liability Current](STOREDVALUE.md#business-liability-current) `GET` [/v1/storedvalue/liabilityCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Current_Liability)
 * [Business Liability Effective](STOREDVALUE.md#business-liability-effective) `GET` [/v1/storedvalue/liabilityEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Effective_Liability)
 * [Business Reconcile](STOREDVALUE.md#business-reconcile) `GET` [/v1/storedvalue/reconcile?StartDate=**\{StartDate\}**&EndDate=**\{EndDate\}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Reconciliation)

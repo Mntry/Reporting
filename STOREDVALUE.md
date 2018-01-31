@@ -37,7 +37,7 @@ All transactions for a single stored value account<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null,
-	  "Business": "Dgo - Main Location"
+      "Business": "Dgo - Main Location"
    },
    {
       "Reference": null,
@@ -51,7 +51,7 @@ All transactions for a single stored value account<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null,
-	  "Business": "Den - Cherry Creek Location"
+      "Business": "Den - Cherry Creek Location"
    }
 ]
 ```
@@ -289,8 +289,8 @@ Transactions in the date range for group owned accounts<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null,
-	  "BusinessID": 555,
-	  "Business": "Dgo - Main Location"
+      "BusinessID": 555,
+      "Business": "Dgo - Main Location"
    },
    {
       "Reference": null,
@@ -304,8 +304,8 @@ Transactions in the date range for group owned accounts<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null,
-	  "BusinessID": 555,
-	  "Business": "Den - Cherry Creek Location"
+      "BusinessID": 555,
+      "Business": "Den - Cherry Creek Location"
    }
 ]
 ```

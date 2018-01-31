@@ -304,7 +304,7 @@ Transactions in the date range for group owned accounts<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null,
-      "BusinessID": 555,
+      "BusinessID": 123,
       "Business": "Den - Cherry Creek Location"
    }
 ]

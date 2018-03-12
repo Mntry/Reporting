@@ -3,10 +3,14 @@
 
 ### Stored Value Reporting Requests
 * [Account Transactions](#account-transactions)
+* [Business Credit Current](#business-credit-current)
+* [Business Credit Effective](#business-credit-effective)
 * [Business Liability Current](#business-liability-current)
 * [Business Liability Effective](#business-liability-effective)
 * [Business Reconcile](#business-reconcile)
 * [Business Transactions](#business-transactions)
+* [Groups Credit Current](#groups-credit-current)
+* [Groups Credit Effective](#groups-credit-effective)
 * [Groups Liability Current](#groups-liability-current)
 * [Groups Liability Effective](#groups-liability-effective)
 * [Groups Reconcile](#groups-reconcile)
@@ -55,6 +59,54 @@ All transactions for a single stored value account<br />
    }
 ]
 ```
+<br />
+
+## Business Credit Current
+Current credit on business owned accounts<br />
+
+`GET` [/v1/storedvalue/creditCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Current_Credit)
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"-225.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"-113.00"
+   }
+]
+```
+<br />
+
+## Business Credit Effective
+Credit as of effective date on business owned accounts<br />
+
+`GET`  [/v1/storedvalue/creditEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Single_Location_Stored_Value_Effective_Credit)
+
+### Request Fields (**bold** fields required)
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **EffectiveDate** <sup>1</sup> | Date    | Credit as of beginning of this day. | URL      |
+
+<sup>1</sup> Date format is yyyy-MM-dd.<br />
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"-25.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"-113.00"
+   }
+]
+```
+<br />
 
 ## Business Liability Current
 Current liability on business owned accounts<br />
@@ -169,6 +221,59 @@ Transactions in the date range<br />
       "IsBulk": false,
       "IsPromo": false,
       "VoidId": null
+   }
+]
+```
+<br />
+
+## Groups Credit Current
+Current credit on group owned accounts<br />
+
+`GET` [/v1/storedvalue/groups/**{id}**/creditCurrent](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Current_Credit)
+
+### Request Fields (**bold** fields required)
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **Id**                         | Integer | Group Id.                | URL      |
+
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"-225.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"-113.00"
+   }
+]
+```
+<br />
+
+## Groups Credit Effective
+Credit as of effective date on group owned accounts<br />
+
+`GET` [/v1/storedvalue/groups/**{Id}**/creditEffective?EffectiveDate=**{EffectiveDate}**](https://reporting-cert.monetary.co/swagger/ui/index#!/StoredValue/Group_Stored_Value_Effective_Credit)
+### Request Fields (**bold** fields required)
+| Field                          | Type    | Description              | Location |
+|--------------------------------|---------|--------------------------|----------|
+| **Id**                         | Integer | Group Id.                | URL      |
+| **EffectiveDate** <sup>1</sup> | Date    | Credit as of beginning of this day. | URL      |
+
+<sup>1</sup> Date format is yyyy-MM-dd.<br />
+
+### Response JSON
+```
+[  
+   {  
+      "Account":"8383830000000034",
+      "Balance":"-25.00"
+   },
+   {  
+      "Account":"8383830000000042",
+      "Balance":"-113.00"
    }
 ]
 ```
